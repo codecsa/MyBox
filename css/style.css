@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'BlackHawk';
+    src: url('../fonts/BlackHawk.eot');
+    src: url('../fonts/BlackHawk.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BlackHawk.woff') format('woff'),
+        url('../fonts/BlackHawk.ttf') format('truetype'),
+    url('../fonts/BlackHawk.svg#BlackHawkregular') format('svg');
+}
+
+@font-face {
+        font-family: "Lato-Light";
+        src: url('../fonts/Lato-Light.eot');
+        src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Light.svg#Lato Black') format('svg'),
+        url('../fonts/Lato-Light.woff') format('woff'),
+        url('../fonts/Lato-Light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+        font-family: "socialshapes";
+        src: url('../fonts/social_shapes.eot');
+        src: url('../fonts/social_shapes.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/social_shapes.svg#Lato Black') format('svg'),
+        url('../fonts/social_shapes.woff') format('woff'),
+        url('../fonts/social_shapes.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: "Lato-Light";
+    color: black;  
+}
+
+.lowercase{ 
+    text-transform: lowercase;
+}
+
+/*LES FLEX*/
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.norow{
+    display : flex;
+    flex-wrap: nowrap; 
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*LE HEADER*/
+
+.headerContent{              /*de index*/
+    width: 98.75vw;
+    height: 80vh;
+    background-image: url(../img/sanstitre.png);
+    border-bottom: 1px solid black;
+    box-sizing: border-box;   
+}
+
+header{ 
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-weight: normal;
+    color: white;
+    font-family: BlackHawk;
+    font-size : 3em;
+    box-sizing: border-box;  
+}
+
+header a {
+    color: white ;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+header a:hover{
+    background-color:#ed1a4c;
+    color: white;
+    box-sizing: border-box;
+}
+
+.logo img{
+    margin-left: 90px;
+    width:150px;
+    height: 60px;     
+}
+
+.navright{
+    margin-right : 90px;
+}
+
+/***Index***/
+main{                           
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+main .subscribe{                      
+    border: 1px solid black;
+    padding-right : 30px;
+    padding-left : 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0,0,0,1);
+    width: 500px;
+    color: white;
+    box-sizing: border-box;   
+}
+
+.subscribe h2{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.subscribe p{                                     
+    padding-bottom : 10px;
+}                                       
+
+.myBox{
+    text-align: center;
+    font-family: BlackHawk;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.galleryRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.galleryColumn{
+    flex: 25%;
+    max-width :25%;
+    padding: 0 4px;
+}
+
+.galleryColumn img{
+    width: 100%;
+    margin-top : 8px;
+    vertical-align: middle;   
+}
+
+/*NEWSLETTER*/
+.newsletter{
+    background-color: #fee266;
+    width: 100%;
+    height: 60px;
+    padding: 25px 45px;
+    color: black;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 30px;
+    justify-content: center;
+    box-sizing: border-box; 
+}
+
+.follow{
+    margin-left: 20px; 
+}
+
+.icones a{
+    font-family: socialshapes;
+    font-size: 4em;
+    color: black;
+    text-decoration: none;
+}
+
+.icones {
+    margin-left: 20px;
+}
+
+/*FOOTER 2*/
+.footer2{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.8;
+    width : 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: ;
+}
+
+.footer2 h3{
+    font-size: 17px;
+}
+
+.footer2Content{
+    width:;
+    display: flex;
+    justify-content: space-around;  
+}
+
+.footdiv a{
+    text-decoration: none;
+    color: white;
+}
+
+.footdiv a:hover{
+    text-decoration: none;
+    color: #ff9055;
+}                                                              
+     
+.footdiv{
+    padding : 20px 30px;
+    width: 250px;
+}
+
+address{
+    font-style: normal;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: black;
+    color : white;
+    text-align: center;
+    line-height: 3;
+}
+
+/*Les bouttons*/
+button {
+    background-color: #ed1a40;
+    border: none;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%
+}
+
+button[type="submit"]:hover{
+    background-color: #a01830 ;
+}
+
+.indisponible{
+    background-color: rosybrown;
+    padding: 13px;   
+}
+
+.input{
+ 
+    height:30px;
+    line-height: 25px;
+    margin-bottom :10px; 
+    border: none;
+}
+
+/*TABLE SHOP*/
+.contentPageTable{
+    background-color: #c1bfbf;
+}
+
+table{
+    width: 900px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c1bfbf;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+th{
+    font-family: BlackHawk;
+    font-size: 2.5em;
+}
+
+td{
+    padding:  -left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.prix{
+    font-size: 20px;    
+}
+
+td img {
+    width: 250px;
+    height: 250px;
+    text-align: center;   
+}
+
+.center{
+   text-align: center; 
+}
+
+.boxesShop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FORMULAIRE DE FOOT*/
+input, textarea{
+    width: 100%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}            
+
+input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;}
+
+textarea{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 80px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*COMPTEUR*/
+
+#compteur{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*INDEX KELEANA*/
+.keleana{
+    background-color: black;
+    background-image: url(../img/keleana53.png);
+    background-size: cover;
+    background-position: center;
+    width: 98.75vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.keleana p{
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.livre .front
+{
+    position: absolute;
+    right: 20px;
+    -webkit-transition : transform 1s linear 0s;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+}
+
+.livre .back{
+    position : absolute;
+    right: 20px;
+    -webkit-transform : perspective(1000px) rotateY(180deg);
+    -webkit-transition : transform 1s linear 0s;
+    -webkit-backface-visibility: hidden;
+}
+
+.livre:hover .front{
+    -webkit-transform : perspective(1000px) rotateY(-180deg);
+}
+.livre:hover .back{
+    -webkit-transform : perspective(1000px) rotateY(0deg);
+}
